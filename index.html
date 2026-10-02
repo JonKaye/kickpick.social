@@ -132,6 +132,20 @@
             transform: translateY(0);
         }
 
+        /* Hancock players claim their roster row from the venue QR, not by registering here */
+        .player-note {
+            margin-top: 18px;
+            font-size: 15px;
+            color: var(--gray);
+            line-height: 1.5;
+            max-width: 420px;
+        }
+
+        .player-note strong {
+            color: var(--white);
+            font-weight: 600;
+        }
+
         /* Video Section */
         .video-section {
             margin: 48px 0;
@@ -196,9 +210,13 @@
             <strong>Pick. Win. Flex.</strong>
         </p>
 
-        <a href="https://app.kickpick.social/player/auth.html" class="cta-button">
+        <a href="https://app.kickpick.social" class="cta-button">
             ENTER THE APP →
         </a>
+
+        <p class="player-note">
+            <strong>Playing Hancock kickball?</strong> Scan the QR code at the field or bar to find your name.
+        </p>
 
         <div class="video-section">
             <!-- Drop the Gemini promo in as videos/KickPickSocial_promo.mp4. Until it exists this box hides itself. -->
